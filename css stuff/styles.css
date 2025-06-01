@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(252, 186, 3);
+    div{
+        display:flex;
+        justify-content: center;
+    }
+    img {
+        width: 300px;
+        height: auto;
+
+    }
+
+}
