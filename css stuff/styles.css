@@ -68,6 +68,16 @@ body {
 
     }
 
+    a:link, a:visited{
+        color: floralwhite;
+        text-decoration: none;
+    }
+    a:hover, a:active{
+        color: rgb(240, 209, 98);
+        text-decoration: none;
+    }
+
+
     #content{
         font-family: pixelfont;
         float:right;
@@ -92,6 +102,7 @@ body {
             font-size: 120%;
         }
     }
+
 
 
     #poppie_beachball{
