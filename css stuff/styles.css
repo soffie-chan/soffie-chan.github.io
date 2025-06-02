@@ -122,34 +122,30 @@ body {
         #content.scroller{
             scrollbar-color: black;
         }
-
-
-
-    #poppie_beachball{
-        width: 300px;
-        padding-top: 2%;
+}
+#poppie_beachball{
+        width: 100vw;
+        padding-top: 0%;
+        padding-left: -60%;
+        min-width: 200px;
     }
+
+footer{
+    border:80 px solid saddlebrown;
 }
 
+    /*Modify Proportions for Resized Window*/
     body {
-    /*font-size: 1vw;*/
     #content{
         width:43vw;
-        /*min-height:61.35vw;*/
         height: 960px;
-    }
-    #poppie_beachball{
-        width: 10vw;
-        padding-top: 0%;
-        min-width: 200px;
-
     }
     #toc{
         width:36vw;
-        /*height:68vw;*/
         height: 960px;
     }
 
+    /*First resize*/
     @media (max-width: 1420px) {
         #toc{
             float: none;
@@ -164,7 +160,7 @@ body {
             height: 70vw;
         }
     }
-
+    /*Smallest resize*/
      @media (max-width: 1320px) {
         #toc{
             font-size: 1.5vw;
