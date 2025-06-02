@@ -14,6 +14,7 @@ html{
     ::-webkit-scrollbar-thumb{
         background: black;
     }
+    min-width: 100px;
 }
 
 body {
@@ -44,6 +45,7 @@ body {
         color: floralwhite;
         text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
         font-size:x-large;
+        min-width: 500px;
     }
 
     /*my picture*/
@@ -65,7 +67,7 @@ body {
         /*Box*/
         float:left;
         width: 550px;
-        height:870px;
+        height:960px;
         padding:40px;
         margin-left:75px;
         background-color: rgb(191, 52, 52);
@@ -103,11 +105,11 @@ body {
         background-color: floralwhite;
         position:relative;
         overflow-y: auto;
-        max-height: 870px;
+        height: 960px;
 
         /*Headers of each topic properties*/
         header{
-            font-size: x-large;
+            font-size: 170%;
             margin-top: 5%;
         }
 
@@ -129,6 +131,54 @@ body {
     }
 }
 
+    body {
+    /*font-size: 1vw;*/
+    #content{
+        width:43vw;
+        /*min-height:61.35vw;*/
+        height: 960px;
+    }
+    #poppie_beachball{
+        width: 10vw;
+        padding-top: 0%;
+        min-width: 200px;
+
+    }
+    #toc{
+        width:36vw;
+        /*height:68vw;*/
+        height: 960px;
+    }
+
+    @media (max-width: 1420px) {
+        #toc{
+            float: none;
+            margin:auto;
+        }
+        #content{
+            width: 36vw;
+            float:none;
+            margin:auto;
+            padding: 40px;
+        }
+    }
+
+     @media (max-width: 1320px) {
+        #toc{
+            font-size: 1.5vw;
+            min-width: 210px;
+            header{
+            font-size: 2.2vw;
+            }
+        }
+
+        #content{
+            min-width: 210px;
+            font-size: 1.6vw;
+        }
+    
+    }
+}
 
 
 /*I got the shadow effect from Martavis P. on Stack Overflow! Thank you!*/
