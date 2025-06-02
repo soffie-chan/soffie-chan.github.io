@@ -1,13 +1,44 @@
+/*Pixel font*/
+@font-face {
+  font-family: pixelfont;
+  src: url(Retro\ Gaming.ttf);
+}
+
 body {
-    background-color: rgb(252, 186, 3);
-    div{
+    /*Background color*/
+    background-color: rgb(240, 209, 98);
+
+    #titles{
         display:flex;
         justify-content: center;
+        font-size: large;
+        font-family: pixelfont;
+        letter-spacing: 3px;
+        line-height: 0.2;
+        color: floralwhite;
+        text-shadow: 0px 0px 10px black;
     }
-    img {
+
+    /*The "I'm Soffie" line - extra things*/
+    #name{
+        text-decoration: underline;
+        display:flex;
+        justify-content: center;
+        font-size: large;
+        font-family: pixelfont;
+        letter-spacing: 3px;
+        line-height: 0.2;
+        color: floralwhite;
+        text-shadow: 0px 0px 10px black;
+        font-size:x-large;
+    }
+
+    /*my picture*/
+    #soffiepic{
         width: 300px;
         height: auto;
-
+        margin:auto;
+        display:flex;
     }
 
 }
