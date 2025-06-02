@@ -48,7 +48,8 @@ body {
         text-align: left;
         color: floralwhite;
         text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
-        
+        font-size: 110%;
+
         /*box*/
         float:left;
         width: 550px;
@@ -92,6 +93,11 @@ body {
         }
     }
 
+
+    #poppie_beachball{
+        width: 300px;
+        padding-top: 2%;
+    }
 }
 
 
