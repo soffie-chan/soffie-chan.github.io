@@ -71,6 +71,7 @@ body {
         padding:40px;
         margin-left:75px;
         background-color: rgb(191, 52, 52);
+        border: 4px solid black;
 
         header:hover{
             color: rgb(240, 209, 98);
@@ -96,6 +97,7 @@ body {
         font-family: pixelfont;
         float:right;
         color: black;
+        border: 4px solid black;
 
         /*Box*/
         scroll-behavior:smooth;
