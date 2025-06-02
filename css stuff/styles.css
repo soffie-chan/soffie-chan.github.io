@@ -4,6 +4,18 @@
   src: url(Retro\ Gaming.ttf);
 }
 
+html{
+    /*scrollbars*/
+    scroll-behavior:smooth;
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 2px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: black;
+    }
+}
+
 body {
     /*Background color*/
     background-color: rgb(240, 209, 98);
@@ -43,14 +55,14 @@ body {
     }
 
     #toc{
-        /*font things*/
+        /*Font things*/
         font-family: pixelfont;
         text-align: left;
         color: floralwhite;
         text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
         font-size: 110%;
 
-        /*box*/
+        /*Box*/
         float:left;
         width: 550px;
         height:870px;
@@ -67,7 +79,7 @@ body {
         }
 
     }
-
+    /*Make the hyperlinks the right color*/
     a:link, a:visited{
         color: floralwhite;
         text-decoration: none;
@@ -77,31 +89,37 @@ body {
         text-decoration: none;
     }
 
-
+    /*Right-side sections - content*/
     #content{
         font-family: pixelfont;
         float:right;
         color: black;
 
-        /*box*/
+        /*Box*/
+        scroll-behavior:smooth;
         float:left;
         width: 650px;
         padding:40px;
         background-color: floralwhite;
-
         position:relative;
         overflow-y: auto;
         max-height: 870px;
 
+        /*Headers of each topic properties*/
         header{
             font-size: x-large;
             margin-top: 5%;
         }
 
+        /*Paragraph properties*/
         p{
             font-size: 120%;
         }
     }
+     /*Box's scroller*/
+        #content.scroller{
+            scrollbar-color: black;
+        }
 
 
 
