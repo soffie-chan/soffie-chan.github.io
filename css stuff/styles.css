@@ -76,7 +76,7 @@ body {
         font-size: 20px;
         text-align: center;
 
-        min-width: 335px;
+        min-width: 345px;
         min-height: 30px;
         width: 35px;
         height: 1.2px;
@@ -89,7 +89,6 @@ body {
     #toc{
         /*Font things*/
         font-family: pixelfont;
-        text-align: left;
         color: floralwhite;
         text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
         font-size: 110%;
@@ -227,12 +226,27 @@ body {
 
     /*First resize*/
     @media (max-width: 1420px) {
+        /*Contents table*/
         #toc{
             float: none;
             margin:auto;
-            height: 70vw;
             margin-bottom: 20px;
+            display:flex;
+            width: 70vw;
+            flex-direction: row;
+            #toccontents{
+                text-align: left;
+                margin-left: 10px;
+                margin-top: -20px;
+            }
+            #toclinks{
+                text-align: left;
+                margin-right: 30px;
+                margin-top: -20px;
+            }
         }
+
+        /*Content*/
         #content{
             width: 70vw;
             float:none;
@@ -240,40 +254,48 @@ body {
             padding: 40px;
             height: 70vw;
             p{
-                font-size:1.9vw;
+                font-size:2.35vw;  
             }
             #jobtitle{
-                font-size: 1.9vw;
-                margin-top:-1px
+                font-size: 2.5vw;
+                margin-top:-6px
             }
             #years{
-                font-size: 1.6vw;
+                font-size: 2vw;
             }
             #jobdesc{
-                font-size:1.5vw;
+                font-size:1.7vw;
                 margin-bottom: 4px;
             }
             #description{
-                font-size:1.8vw;
+                font-size:2.4vw;
+            }
+            .links{
+                color:rgb(240, 209, 98);
+                font-size: 2.5vw;
+            }
+            .links:hover{
+                color:rgb(191, 52, 52)
             }
         }
     }
     /*Smallest resize*/
      @media (max-width: 1320px) {
         #toc{
-            font-size: 1.5vw;
+            font-size: 1.8vw;
             min-width: 210px;
-            height: 80vw;
+            height: 40vw;
+            gap:30px;
             header{
-            font-size: 2.2vw;
+            font-size: 2.7vw;
             }
         }
 
         #content{
     
             min-width: 210px;
-            font-size: 1.6vw;
-            height: 80vw;
+            font-size: 2vw;
+            height: 100vw;
         }
     
     }
