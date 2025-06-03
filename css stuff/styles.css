@@ -57,7 +57,17 @@ body {
     }
 
     #welcomeoverlay{
-        
+        font-family: pixelfont;
+        color:floralwhite;
+        background:scroll;
+        background-color: black;
+        font-size: 2vw;
+
+        width: 33.5vw;
+        height: 2.5vw;
+        /*center*/
+        display:flex;
+        margin:auto;
     }
 
     /*Table of Contents*/
