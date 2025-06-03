@@ -19,7 +19,8 @@ html{
 
 body {
     /*Background color*/
-    background-color: rgb(240, 209, 98);
+    /*background-color: rgb(240, 209, 98);*/
+    background-image: url("images/webpagebg.jpg");
 
     #titles{
         display:flex;
@@ -31,8 +32,11 @@ body {
         color: floralwhite;
         text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
         background-color: rgb(191, 52, 52);
-        width: 320px;
+        width: 340px;
         margin:auto;
+        border-bottom: 7.5px solid black;
+        border-right: 7.5px solid black;
+        border-radius: 26px;
     }
 
     /*The "I'm Soffie" line - extra things*/
@@ -50,8 +54,10 @@ body {
         min-width: 500px;
         background-color: rgb(191, 52, 52);
         margin:auto;
-        width: 520px;
-
+        width: 540px;
+        border-bottom: 7.5px solid black;
+        border-right: 7.5px solid black;
+        border-radius: 26px;
     }
 
     /*my picture*/
@@ -87,14 +93,17 @@ body {
         color: floralwhite;
         text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
         font-size: 110%;
+        border-bottom: 7.5px solid black;
+        border-right: 7.5px solid black;
 
         /*Box*/
         float:left;
         height:960px;
         padding:40px;
         margin-left:75px;
+        margin-right: 40px;
         background-color: rgb(191, 52, 52);
-        border: 4px solid black;
+        /*border: 4px solid black;*/
 
         header:hover{
             color: rgb(240, 209, 98);
@@ -178,8 +187,16 @@ body {
             flex-direction: column;
             justify-content: flex-start;
         }
+        .links{
+            color:rgb(240, 209, 98);
+            font-size: 1.8vw;
+        }
+        .links:hover{
+            color:rgb(191, 52, 52)
+        }
 
     }
+    
 
     /*Box's scroller*/
     #content.scroller{
