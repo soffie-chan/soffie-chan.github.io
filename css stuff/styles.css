@@ -56,6 +56,11 @@ body {
         display:flex;
     }
 
+    #welcomeoverlay{
+        
+    }
+
+    /*Table of Contents*/
     #toc{
         /*Font things*/
         font-family: pixelfont;
@@ -119,11 +124,50 @@ body {
         p{
             font-size: 120%;
         }
-    }
-     /*Box's scroller*/
-        #content.scroller{
-            scrollbar-color: black;
+
+        /*Tiny pictures and titles*/
+        #titleimage{
+        width:8vw;
+        margin-right: 10px;
         }
+        .container{
+        display:flex;
+        align-items:flex-start;
+        gap: 2px;
+        }
+        #jobtitle{
+            padding-bottom: -21px;
+            font-size: 1.3vw;
+            margin-bottom: -0.3px;
+            margin-top: 0.9vw;
+            margin-left: 4px;
+        }
+        #years{
+            font-size:1.05vw;
+            margin:4px;
+            font-style: italic;
+        }
+        #jobdesc{
+            font-size: 1vw;
+            margin-bottom: -10px;
+            margin-top:2px;
+            margin-left: 4px;
+        }
+        #description{
+            font-size:1.3vw;
+        }
+        .words{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+    }
+
+    /*Box's scroller*/
+    #content.scroller{
+        scrollbar-color: black;
+    }
 }
 #poppie_beachball{
         width: 100vw;
@@ -135,6 +179,9 @@ body {
 footer{
     border:80 px solid saddlebrown;
 }
+
+
+
 
     /*Modify Proportions for Resized Window*/
     body {
