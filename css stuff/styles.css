@@ -191,7 +191,8 @@ body {
             font-size: 1.8vw;
         }
         .links:hover{
-            color:rgb(191, 52, 52)
+            color: floralwhite;
+            background-color:rgb(191, 52, 52)
         }
 
     }
@@ -202,8 +203,11 @@ body {
         scrollbar-color: black;
     }
 }
+
 #poppie_beachball{
-        width: 100vw;
+    margin:auto;
+    display: flex;
+
         padding-top: 0%;
         padding-left: -60%;
         min-width: 200px;
@@ -275,8 +279,12 @@ body {
                 font-size: 2.5vw;
             }
             .links:hover{
-                color:rgb(191, 52, 52)
+                color: floralwhite;
+                background-color:rgb(191, 52, 52)
             }
+        }
+        #poppie_beachball{
+            width:90vw;
         }
     }
     /*Smallest resize*/
