@@ -20,7 +20,7 @@ html{
 body {
     /*Background color*/
     /*background-color: rgb(240, 209, 98);*/
-    background-image: url("images/webpagebg.jpg");
+    background-image: url("images/webpagebg.png");
 
     #titles{
         display:flex;
