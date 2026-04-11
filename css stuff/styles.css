@@ -4,6 +4,16 @@
   src: url(Retro\ Gaming.ttf);
 }
 
+@font-face {
+    font-family: morifont;
+    src: url(PPMori-Regular.otf);
+}
+
+@font-face {
+    font-family: boldmorifont;
+    src: url(PPMori-SemiBold.otf);
+}
+
 html{
     /*scrollbars*/
     scroll-behavior:smooth;
@@ -17,25 +27,34 @@ html{
     min-width: 100px;
 }
 
+#welcome-banner{
+    display: flex;
+    background-color: #EB1579;
+    align-items: center;
+    justify-content: center;
+    margin: 4.8vw;
+    border: 4px solid black;
+    border-radius: 49px;
+}
+#welcome-banner-text{
+    display: inline;
+}
+
 body {
     /*Background color*/
     /*background-color: rgb(240, 209, 98);*/
-    background-image: url("images/webpagebg.png");
+    background-color: #FFA914;
 
     #titles{
         display:flex;
         justify-content: center;
-        font-size: large;
+        font-size: small;
         font-family: pixelfont;
         letter-spacing: 3px;
         line-height: 0.2;
         color: floralwhite;
-        text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
-        background-color: rgb(191, 52, 52);
-        width: 340px;
+        width: auto;
         margin:auto;
-        border-bottom: 7.5px solid black;
-        border-right: 7.5px solid black;
         border-radius: 26px;
     }
 
@@ -44,28 +63,26 @@ body {
         /*text-decoration: underline;*/
         display:flex;
         justify-content: center;
-        font-size: large;
-        font-family: pixelfont;
-        letter-spacing: 3px;
-        line-height: 0.2;
+        font-size: x-large;
+        font-family: boldmorifont;
+        line-height: 0.001;
+        margin-bottom: 20px;
         color: floralwhite;
-        text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
-        font-size:x-large;
+        font-size:40px;
         min-width: 500px;
-        background-color: rgb(191, 52, 52);
-        margin:auto;
+        background-color: #3776ED;
         width: 540px;
-        border-bottom: 7.5px solid black;
-        border-right: 7.5px solid black;
-        border-radius: 26px;
+        padding-top: 11px;
+        padding-bottom: -10px;
+        border-bottom: 9px solid black;
+        border-right: 9px solid black;
+        border-radius: 49px;
     }
 
     /*my picture*/
     #soffiepic{
         width: 300px;
         height: auto;
-        margin:auto;
-        display:flex;
     }
 
     #welcomeoverlay{
@@ -82,7 +99,9 @@ body {
         height: 1.2px;
         
         /*center*/
-        margin:auto;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:5px
     }
 
     /*Table of Contents*/
@@ -90,23 +109,13 @@ body {
         /*Font things*/
         font-family: pixelfont;
         color: floralwhite;
-        text-shadow: 4px 4px 0px #010000, 2px 3px 0px #010000, 4px 5px 0px #010000, 4px 6px 0px #010000;
-        font-size: 110%;
-        border-bottom: 7.5px solid black;
-        border-right: 7.5px solid black;
+        font-size: 90%;
 
         /*Box*/
-        float:left;
-        height:960px;
-        padding:40px;
-        margin-left:75px;
-        margin-right: 40px;
-        background-color: rgb(191, 52, 52);
+        padding:10px;
+        background-color: #3776ED;
         /*border: 4px solid black;*/
 
-        header:hover{
-            color: rgb(240, 209, 98);
-        }
         header{
             font-size: x-large;
             margin-top: 5%;
@@ -119,8 +128,7 @@ body {
         text-decoration: none;
     }
     a:hover, a:active{
-        color: rgb(240, 209, 98);
-        text-decoration: none;
+        color: #FFA914;
     }
 
     /*Right-side sections - content*/
@@ -218,36 +226,47 @@ body {
 
 
     /*Modify Proportions for Resized Window*/
-    body {
     #content{
-        width:43vw;
+        width:52vw;
         height: 960px;
     }
     #toc{
-        width:31vw;
-        height: 960px;
+        display: flex;
+        width:86vw;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50px;
+    }
+    #toccontents{
+        display: flex;
+        flex-direction: row;
+        gap: 4.2rem;
+        padding-left: 40px;
+        margin-top: -55px;
+        margin-left: 25px;
+        align-items: center;
     }
 
     /*First resize*/
     @media (max-width: 1420px) {
         /*Contents table*/
         #toc{
-            float: none;
-            margin:auto;
-            margin-bottom: 20px;
-            display:flex;
-            width: 70vw;
+            display: inline-flex;
             flex-direction: row;
-            #toccontents{
-                text-align: left;
-                margin-left: 10px;
-                margin-top: -20px;
-            }
-            #toclinks{
-                text-align: left;
-                margin-right: 30px;
-                margin-top: -20px;
-            }
+        }
+        #toccontents{
+            display: flex;
+            text-align: center;
+            margin-left: 30px;
+            flex-direction: row;
+            gap: 5px;
+        }
+        #toclinks{
+            margin-right: 30px;
+            margin-top: -20px;
         }
 
         /*Content*/
@@ -293,7 +312,7 @@ body {
             font-size: 1.8vw;
             min-width: 210px;
             height: 40vw;
-            gap:30px;
+            gap:90px;
             header{
             font-size: 2.7vw;
             }
@@ -307,7 +326,7 @@ body {
         }
     
     }
-}
+
 
 
 /*I got the shadow effect from Martavis P. on Stack Overflow! Thank you!*/
