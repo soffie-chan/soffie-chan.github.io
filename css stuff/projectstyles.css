@@ -1,0 +1,99 @@
+@font-face {
+  font-family: pixelfont;
+  src: url(Retro\ Gaming.ttf);
+}
+
+@font-face {
+    font-family: morifont;
+    src: url(PPMori-Regular.otf);
+}
+
+@font-face {
+    font-family: boldmorifont;
+    src: url(PPMori-SemiBold.otf);
+}
+
+html{
+    /*scrollbars*/
+    scroll-behavior:smooth;
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 2px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: black;
+    }
+    min-width: 100px;
+    background-color: #ffd167;
+}
+
+    #mainbody{
+        margin-left:100px;
+        margin-right: 100px;
+    }
+
+#projectview{
+    font-family: morifont;
+    display:flex;
+    gap: 300px;
+    font-size: 20px;
+}
+
+#projecttitle{
+    font-family: boldmorifont;
+    text-align: center;
+    margin-top: 50px;
+    padding:10px;
+    font-size: 50px;
+    color: floralwhite;
+    background-color: #ef5ea2;
+    width: 500px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#researchq{
+    font-family: boldmorifont;
+    padding: 20px;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 900px;
+}
+
+h1{
+    font-family: pixelfont;
+    color: floralwhite;
+    background-color: #ef5ea2;
+    width: fit-content;
+}
+
+
+.tinytitles{
+    font-family: pixelfont;
+    font-size: 25px;
+    color: floralwhite;
+    background-color: #3776ED;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+body{
+    font-family: morifont;
+    font-size: 20px;
+}
+#images{
+   display: grid;
+   place-items: center;
+}
+.writeup{
+    background-color: floralwhite;
+    padding: 30px;
+    border-radius: 45px;
+}
+
+#overview{
+    font-family: morifont;
+}

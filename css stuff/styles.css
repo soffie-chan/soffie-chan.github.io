@@ -31,7 +31,7 @@ h2{
     font-family: pixelfont;
     text-align: center;
     color: floralwhite;
-    background-color: black;
+    background-color: #3776ED;
     width: 420px;
     margin-left: auto;
     margin-top:-5px;
@@ -39,12 +39,13 @@ h2{
 }
 #welcome-banner{
     display: flex;
-    background-color: #EB1579;
+    background-color: #ef5ea2;
     align-items: center;
     justify-content: center;
-    margin: 4.8vw;
+    margin: 60px;
     border: 4px solid black;
     border-radius: 49px;
+    min-width: 400px;
 }
 #welcome-banner-text{
     display: inline;
@@ -53,12 +54,12 @@ h2{
 body {
     /*Background color*/
     /*background-color: rgb(240, 209, 98);*/
-    background-color: #FFA914;
+    background-color: #ffd167;
 
     #titles{
         display:flex;
         justify-content: center;
-        font-size: 0.9vw;
+        font-size: 1vw;
         font-family: pixelfont;
         letter-spacing: 3px;
         line-height: 0.2;
@@ -73,14 +74,14 @@ body {
         /*text-decoration: underline;*/
         display:flex;
         justify-content: center;
-        font-size: x-large;
         font-family: boldmorifont;
         line-height: 0.001;
         margin-bottom: 20px;
         color: floralwhite;
         font-size:40px;
         background-color: #3776ED;
-        width: 35vw;
+        width: 40vw;
+        font-size: 3vw;
         padding-top: 11px;
         padding-bottom: -10px;
         border-bottom: 9px solid black;
@@ -90,32 +91,32 @@ body {
 
     /*my picture*/
     #soffiepic{
-        width: 25vw;
+        width: 30vw;
         height: auto;
+        position: relative;
     }
 
     #welcomeoverlay{
         font-family: pixelfont;
         color:floralwhite;
-        background:scroll;
-        background-color: black;
-        font-size: 20px;
+        background-color: rgb(19, 19, 19);
+        font-size: 1.1vw;
+        padding-bottom: 1vw;
         text-align: center;
 
-        min-width: 345px;
-        min-height: 30px;
-        width: 35px;
+        min-height: 2vw;
+        width: 36vw;
         height: 1.2px;
         
-        /*center*/
+        /*cente7*/
         margin-left:auto;
         margin-right: auto;
-        margin-top:5px
+        margin-top:5px;
     }
 
     /*Table of Contents*/
     header{
-            font-size:20px;
+            font-size:1.3vw;
             margin-top: 5%;
             margin-left:3px;
             font-family: pixelfont;
@@ -124,9 +125,9 @@ body {
         }
     
     .pinklinks{
-        font-size: 40px;
-        background-color: #EB1579;
-        width:1340px;
+        font-size: 3vw;
+        background-color: #ef5ea2;
+        width:100vw;
         margin-left: auto;
         margin-right: auto;
         color: floralwhite;
@@ -136,50 +137,89 @@ body {
         font-family: pixelfont;
         text-align: center;
         margin-bottom: -20px;
+        font-size: 1.3vw;
+    }
+    a:hover{
+            color: #FFA914;;
+        }
+    a{
+        color: floralwhite;
+    }
+
+    #toc header{
+        margin: 0;
+        padding-top:55px;
+        font-size: 1.rem;
     }
 
     #toc{
         /*Font things*/
+        position: relative;
         font-family: pixelfont;
         color: floralwhite;
-        font-size: 90%;
         /*Box*/
-        padding:10px;
+        padding:1vw;
+        height: 2vw;
         background-color: #3776ED;
         /*border: 4px solid black;*/
-
     }
     /*Make the hyperlinks the right color*/
     a:link, a:visited{
-        color: floralwhite;
         text-decoration: none;
     }
-    a:hover, a:active{
-        color: #FFA914;
-    }
+    
 
     /*Right-side sections - content*/
-    #project:hover{
+    #project:hover, #activity:hover{
         background-color: #3776ED;
         color:floralwhite;
         cursor: pointer;
     }
-
-    #activity:hover{
-        background-color: #3776ED;
-        color:floralwhite
+    
+    #project_cards a,
+    #activities_cards a, #writing_cards a{
+        display: block;
+        color: black;
+        text-decoration: none;
     }
     
+    #project_cards a:visited,
+    #activities_cards a:visited, #writing_cards a:visited {
+        color: black;
+    }
+
+    .statement{
+        font-family: morifont;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: floralwhite;
+        padding: 15px;
+        border-radius: 25px;
+    }
+    .aboutcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 0;
+        font-size: 1.5vw;
+    }
+
+    .pic{
+        height: auto;
+        width: 4px;
+    }
     .container{
         font-family:morifont ;
-        height:200px;
         display:flex;
         flex-direction: column;
         background-color: floralwhite;
         border:4px black solid;
         border-radius: 49px;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 10px;
+        overflow: hidden;
     }
     .header-row{
         display:flex;
@@ -255,16 +295,17 @@ body {
             margin-top: 0.5rem;
             text-align: center;
             padding-left: 17px;
-            width:380px;
+            padding-right: 17px;
+            overflow: hidden;
+            word-wrap: break-word;
+            line-height: 1.4;
         }
         .links{
             font-family: boldmorifont;
-            font-size: 1.5vw;
+            font-size: 1.8vw;
             border: 2px solid black;
-            padding: 2px;
-            border-radius: 24px;
             padding: 10px;
-
+            border-radius: 24px;
         }
         .links:hover{
             color: floralwhite;
@@ -273,15 +314,13 @@ body {
 }
 
 #project_cards{
-    display: flex;
-        align-items: center;
-        padding-left: 85px;
-        padding-right: 85px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    justify-content: center;
     margin-top: 1rem;
+    padding-left: 85px;
+    padding-right: 85px;
+    color: black;
 }
 #activities_cards{
     display: grid;
@@ -289,7 +328,7 @@ body {
     justify-content: center;
     margin-top: 1rem;
     padding-left: 85px;
-        padding-right: 85px;
+    padding-right: 85px;
     gap:2rem;
 }
 #writing_cards{
@@ -322,10 +361,10 @@ body {
     }
     #toc{
         display: flex;
-        width:86vw;
+        width: 80vw;
         flex-direction: row;
         justify-content: flex-start;
-        height: 2vw;
+        height: 1vw;
         margin-left: auto;
         margin-right: auto;
         margin-top: -50px;
@@ -336,28 +375,14 @@ body {
         gap: 4.2vw;
         padding-left: 40px;
         margin-top: -55px;
-        margin-left: 25px;
         align-items: center;
+        justify-content: center;
     }
 
     /*First resize*/
-    @media (max-width: 1420px) {
+    @media (max-width: 1220px) {
         /*Contents table*/
-        #toc{
-            display: inline-flex;
-            flex-direction: row;
-        }
-        #toccontents{
-            display: flex;
-            text-align: center;
-            margin-left: 30px;
-            flex-direction: row;
-            gap: 5px;
-        }
-        #toclinks{
-            margin-right: 30px;
-            margin-top: -20px;
-        }
+
 
         /*Content*/
         
@@ -389,44 +414,58 @@ body {
         #project_cards{
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+            padding-left: 40px;
+            padding-right: 40px;
         }
         #activities_cards{
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        #writing_cards{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            padding-left: 40px;
+            padding-right: 40px;
         }
         #poppie_beachball{
             width:90vw;
         }
     }
     /*Smallest resize*/
-     @media (max-width: 1320px) {
-        #toc{
-            font-size: 1.8vw;
-            min-width: 210px;
-            height: 40vw;
-            gap:90px;
-            header{
-            font-size: 2.7vw;
-            }
-        }
-
-        #content{
-    
-            min-width: 210px;
-            font-size: 2vw;
-            height: 100vw;
-        }
+     /* @media (max-width: 1320px) {
+        
         #project_cards{
             grid-template-columns: 1fr;
             gap: 1rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 35vw;
+            margin-left: auto;
+            margin-right: auto;
         }
         #activities_cards{
             grid-template-columns: 1fr;
             gap: 1rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 35vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #writing_cards{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 35vw;
+            margin-left: auto;
+            margin-right: auto;
         }
     
     }
 
 
 
-/*I got the shadow effect from Martavis P. on Stack Overflow! Thank you!*/
+I got the shadow effect from Martavis P. on Stack Overflow! Thank you! */
