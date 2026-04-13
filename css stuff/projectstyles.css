@@ -103,3 +103,9 @@ body{
 #caption{
     font-size: 1.2vw;
 }
+
+img {
+  width: 20vw;
+  height: 100%;
+  object-fit: cover;
+}
