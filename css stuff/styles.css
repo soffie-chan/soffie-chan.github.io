@@ -91,7 +91,7 @@ body {
 
     /*my picture*/
     #soffiepic{
-        width: 30vw;
+        width: 27vw;
         height: auto;
         position: relative;
     }
@@ -203,19 +203,11 @@ img{
         padding: 15px;
         border-radius: 25px;
     }
-    .pic{
-        width: 200px;
-        height: 200px;
-        background-color: floralwhite;
-        border: 4px solid black;
-        border-radius: 25px;
-        margin-left: 20px;
-    }
     .aboutcontainer{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         margin: 20px 0;
         font-size: 1.5vw;
     }
@@ -320,10 +312,11 @@ img{
             border: 2px solid black;
             padding: 10px;
             border-radius: 24px;
+            background-color:#3776ED;
         }
         .links:hover{
             color: floralwhite;
-            background-color:#3776ED;
+            background-color:#ef5ea2;
         }
 }
 
