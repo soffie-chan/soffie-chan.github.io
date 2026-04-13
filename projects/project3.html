@@ -3,62 +3,58 @@
     <div id="mainbody">
         <link rel="stylesheet" href="../css stuff/projectstyles.css">
         <div>
-            <div id="projecttitle">Canvas Shortcuts</div>
+            <div id="projecttitle">The Game Studies Handbook Website</div>
         </div>
 
         <div id="researchq">
-            "What are the most common pain points that users face when interacting with Canvas, and how can they be mitigated?"
+            "How can we increase interaction between Game Studies students and provided resources?"
         </div>
 
         <br>
         <div id="projectview">
             <div id="projectdetails">
-                <div class="tinytitles">TEAM</div>Soffie Paul and Anthony Nittoly
+                <div class="tinytitles">TEAM</div>Soffie Paul
                 <br>
                 <br>
-                <div class="tinytitles">TIMELINE</div> February 2026 - March 2026
+                <div class="tinytitles">TIMELINE</div> IN PROGRESS!
                 <br>
                 <br>
-                <div class="tinytitles">TOOLS</div> VSCode (HTML/CSS/TypeScript), TamperMonkey, GitHub
+                <div class="tinytitles">TOOLS</div> VSCode (HTML/CSS/TypeScript)
                 <br>
                 <br>
-                <div class="tinytitles">LINKS</div><a href="https://github.com/soffie-chan/more-canvas-tools" target="_blank">View the GitHub Repo</a>
+                <div class="tinytitles">LINKS</div><a href="https://github.com/soffie-chan/tgsh.git" target="_blank">View the GitHub Repo</a>
                 <br>
                 <br>
             </div>
             <div id="overview">
                 <div class="tinytitles">OVERVIEW</div>
-                <div class="writeup">As part of the Computer Education Technology course at UD, our team of two developed Canvas Shortcuts - an extension that allows users to create a shortcut to a specific part of any course in Canvas. This way, users can directly navigate to the page they wish without going through multiple steps, which was a self-reported problem many users were facing. We also developed tools within the overlay to customize each Shortcut to the user's liking.</div>
+                <div class="writeup">The Game Studies Handbook is a compliation of resources and advice for students. I found the handbook to be extremely useful but not interactive enough, which was an opinion various students held. I inquired from various faculty members of the Game Studies Department and recieved approval to develop the Game Studies Handbook into an interactive website to increase engagement from students.</div>
                 <br><br>
                 <div class="tinytitles">ROLE</div>
-                I interviewed 5 students on their Canvas usage and pain points. In development, I created the shortcut links, shortcut edit and delete modes, utilized Web Storage API to retain shortcuts, and created a functioning filing system.
+                I spoke with faculty members regarding the Handbook and pursuing the website development as a project. This is a solo project - I will be coding and creating all assets!
             </div>
         </div>
 
         <div class="container">
             <h1>THE PROBLEM</h1>
-            <div class="writeup">Canvas is the chosen educational management tool used by the University of Delaware, where I am a student. However, many professors use Canvas differently - some of them don't realize that they hide their most valuable resources in hard-to-access spaces, whereas some clutter their Canvas page and enhance cognitive overload for students. About 40% of the students interviewed stated that they were often stressed by having to change their method of navigation for each course, leading to unecessary stress.</div>
+            <div class="writeup">The Game Studies & Esports Department has a useful compilation of advice, resources, and information in the form of a Google Document. I found the handbook to be less interactive than desired, and therefore less engaging. Upon inquiry of Game Studies faculty, it was agreed upon that the Handbook could use better design choices in an interactive format.</div>
         </div>
 
         <div class="container">
             <h1>THE SOLUTION</h1>
-            <div class="writeup">Students need autonomy over course organization to help them interact with the course material with ease. Canvas Shortcuts is a userscript that autofills the best Shortcut name and URL to create a clickable link that can be accessed at any time. Moreover, it allows users to organize their Shortcuts in their desired format. Think of it as Bookmarks without the clutter!</div>
+            <div class="writeup">Students need an interactive, appealing way to use the Game Studies Handbook and book engagement. A website for the Handbook using customizable video-game themed assets can improve user interaction.</div>
         </div>
 
         <br><br>
         <div class="showcase">
             <div id="images">
-                <img src="../css stuff/p1images/project1output1.png">
+                <img src="../css stuff/p3images/Example1.png">
                 <br>
-                <div id="caption">Img 1. Shortcut creation menu</div>
+                <div id="caption">Img 1. Prototype website example 1</div>
                 <br><br>
-                <img src="../css stuff/p1images/p1output2.png">
+                <img src="../css stuff/p3images/Example2.png">
                 <br>
-                <div id="caption">Img 2. The Shortcuts menu with folders and shortcuts, alongside edit and delete buttons</div>
-                <br><br>
-                <img src="../css stuff/p1images/p1output3.png">
-                <br>
-                <div id="caption">Img 3. File Creation Menu</div>
+                <div id="caption">Img 2. Prototype website example 2</div>
                 <br><br>
             </div>
             <br>
@@ -67,30 +63,23 @@
 
         <div class="container">
             <h1>THE METHODS AND PROCESS </h1>
-            <div class="writeup">I interviewed 5 students across different years through verbal conversation. I asked a series of questions, including how often they use Canvas, which courses they used Canvas for, and what their most prominent pain points were when using the LLM. 40% of students said the same pain point - professors arranging their Canvas page in different ways makes it that much more harder for them to easily navigate through the page, as they have to keep adapting to each course page.</div>
+            <div class="writeup">IN PROGRESS!</div>
             <br><br>
-            <div class="writeup">After identifying this pain point, we began by creating a wireframe of the different features that students could use to access different parts of a Canvas page in an easier way. We began by using Web Storage API to obtain the page's name and URL, making our concept of a Shortcut. We also created a list to append each Shortcut to. We then tackled how to use local storage to save the links on refresh.</div>
+            <!-- <div class="writeup">After identifying this pain point, we began by creating a wireframe of the different features that students could use to access different parts of a Canvas page in an easier way. We began by using Web Storage API to obtain the page's name and URL, making our concept of a Shortcut. We also created a list to append each Shortcut to. We then tackled how to use local storage to save the links on refresh.</div>
             <br><br>
             <div class="writeup">Then, we created the edit and delete menus to allow users to make changes to their Shortcut. Around this time, we consulted our fellow engineers in the course - through some usability testing and questioning, we learned that our Shortcuts menu was not as organizable as we intended, since shortcuts can get mixed up with others from other courses.</div>
             <br><br>
-            <div class="writeup">We went back to our prototype and created a filing system that allowed users to file their shortcuts effectively. Users could add a shortcut to a file or the Shortcuts list directly, and even edit or delete files. We built off of Dr. Austin Cory Bart's "More Canvas Tools" extension by obtaining the userscript and crafting one of our own using Typescript, CSS, HTML, and TamperMonkey. and addition of shortcuts to a list. their shortcuts.</div>
-            <br><br>
-            <div class="showcase">
-                <div id="images">
-                    <img src="../css stuff/p1images/p1wireframe.jpg">
-                    <br>
-                    <div id="caption">Img 4. Canvas Shortcuts wireframe</div>
-                </div>
-            </div>
+            <div class="writeup">We went back to our prototype and created a filing system that allowed users to file their shortcuts effectively. Users could add a shortcut to a file or the Shortcuts list directly, and even edit or delete files. We built off of Dr. Austin Cory Bart's "More Canvas Tools" extension by obtaining the userscript and crafting one of our own using Typescript, CSS, HTML, and TamperMonkey. and addition of shortcuts to a list. their shortcuts.</div> -->
+            <!-- <br><br> -->
         </div>
 
         <div class="container">
             <h1>INSIGHTS & REFLECTION</h1>
-            <div class="writeup">I learned a lot about how important autonomy is to users. It's one of the driving forces that determines comfort with interaction. Even a barrier as small as a few seconds can lead to students feeling troubled over navigation. I also learned about how APIs, such as Rest API and Web Storage API, access various parts of any user's page and modify what users see. TamperMonkey also helped me learn about how userscripts access webpage information to create the complex pages that we call course pages.</div>
+            <div class="writeup">IN PROGRESS!</div>
             <br><br>
-            <div class="writeup"><u>What Worked Well?</u> I had some meaningful conversations with 5 UD students - there are so many minor design choices that amount to ease or unease of technology use that we only learn when we consult the user. Being able to emphasize on those responses and find places to use userscripts and create functional tools was a great step towards the project's completion and my own understanding of user thinking. We also recieved great feedback and suggestions from our professor and fellow students that allowed us to better our project.</div>
+            <!-- <div class="writeup"><u>What Worked Well?</u> I had some meaningful conversations with 5 UD students - there are so many minor design choices that amount to ease or unease of technology use that we only learn when we consult the user. Being able to emphasize on those responses and find places to use userscripts and create functional tools was a great step towards the project's completion and my own understanding of user thinking. We also recieved great feedback and suggestions from our professor and fellow students that allowed us to better our project.</div>
                     <br><br>
-            <div class="writeup"><u>What Would I Improve?</u> If given the time and resources, I would conduct formal usability testing for the product with students, now that Canvas Shortcuts is well beyond the minimum viable stage. We also hope to consider various edge cases and improve the visual interface in the near future. I see opportunities where more autonomy could be provided, such as picking colors and tags for Shortcuts and providing a short tutorial.</div>
+            <div class="writeup"><u>What Would I Improve?</u> If given the time and resources, I would conduct formal usability testing for the product with students, now that Canvas Shortcuts is well beyond the minimum viable stage. We also hope to consider various edge cases and improve the visual interface in the near future. I see opportunities where more autonomy could be provided, such as picking colors and tags for Shortcuts and providing a short tutorial.</div> -->
 
         <br><br>
     </div>
