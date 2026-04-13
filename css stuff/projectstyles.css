@@ -35,8 +35,8 @@ html{
 #projectview{
     font-family: morifont;
     display:flex;
-    gap: 300px;
-    font-size: 20px;
+    gap: 20vw;
+    font-size: 1vw;
 }
 
 #projecttitle{
@@ -44,10 +44,10 @@ html{
     text-align: center;
     margin-top: 50px;
     padding:10px;
-    font-size: 50px;
+    font-size: 5vw;
     color: floralwhite;
     background-color: #ef5ea2;
-    width: 500px;
+    width: 50vw;
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -56,12 +56,12 @@ html{
 #researchq{
     font-family: boldmorifont;
     padding: 20px;
-    font-size: 30px;
+    font-size: 2vw;
     font-style: italic;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 900px;
+    width: 50vw;
 }
 
 h1{
@@ -69,12 +69,13 @@ h1{
     color: floralwhite;
     background-color: #ef5ea2;
     width: fit-content;
+    font-size: 3vw;
 }
 
 
 .tinytitles{
     font-family: pixelfont;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: floralwhite;
     background-color: #3776ED;
     width: fit-content;
@@ -92,8 +93,13 @@ body{
     background-color: floralwhite;
     padding: 30px;
     border-radius: 45px;
+    font-size: 1.2vw;
 }
 
 #overview{
     font-family: morifont;
+}
+
+#caption{
+    font-size: 1.2vw;
 }
